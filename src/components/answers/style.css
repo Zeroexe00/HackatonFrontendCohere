@@ -1,0 +1,10 @@
+.answers {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.response {
+  font-size: 1.2rem;
+}

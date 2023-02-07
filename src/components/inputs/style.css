@@ -1,0 +1,23 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.inputs {
+  margin: 0;
+  background-color: #F8F8F8 !important;
+  height: 2rem;
+  border: 0 !important;
+  outline: none !important;
+  color: rgb(108, 108, 108);
+  background-image: none;
+  transition: border-color ease-in-out 0.3s;
+  border-radius: 6px;
+  padding: .5rem;
+  font-size: 14px;
+  display: flex;
+  width: 70%;
+}

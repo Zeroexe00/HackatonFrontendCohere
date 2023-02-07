@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  background: #4230b5;
 }
 .response {
   font-size: 1.2rem;

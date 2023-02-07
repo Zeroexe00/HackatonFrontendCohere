@@ -11,6 +11,14 @@
 .App {
   display: grid;
   grid-template-columns: 50% 50%;
+  background: #4230b5;
+}
+@media screen and (max-width: 768px) {
+  .App {
+    display: flex;
+    flex-flow: column;
+    padding: 16px;
+  }
 }
 body {
   font-family: 'DM Sans', sans-serif;

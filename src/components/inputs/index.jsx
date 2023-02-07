@@ -31,12 +31,13 @@ export default function inputs() {
   const [ getCohereResponse, {data, isLoading: isCohereLoading } ] = useGetCohereResponseMutation();
   
   const sendData = async ({keywordsTitle, keywordsBody}) => {
+    context.setNewCohereResponse({isLoading: true})
     await getCohereResponse({ keywordsTitle, keywordsBody })
   }
   
   useEffect(() => {
     if(!data) return;
-    context.setNewCohereResponse(data)
+    context.setNewCohereResponse({isLoading: false, ...data})
   }, [data])
 
   return (
